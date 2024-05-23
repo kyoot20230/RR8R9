@@ -6,11 +6,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from AarohiX import app
-from AarohiX.misc import _boot_
-from AarohiX.plugins.sudo.sudoers import sudoers_list
-from AarohiX.utils import bot_sys_stats
-from AarohiX.utils.database import (
+from ADMAN import app
+from ADMAN.misc import _boot_
+from ADMAN.plugins.sudo.sudoers import sudoers_list
+from ADMAN.utils import bot_sys_stats
+from ADMAN.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -18,9 +18,9 @@ from AarohiX.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from AarohiX.utils.decorators.language import LanguageStart
-from AarohiX.utils.formatters import get_readable_time
-from AarohiX.utils.inline import first_page, private_panel, start_panel
+from ADMAN.utils.decorators.language import LanguageStart
+from ADMAN.utils.formatters import get_readable_time
+from ADMAN.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
